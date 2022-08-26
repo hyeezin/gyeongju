@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+.inner { width: 1260px; margin: 0 auto;}
+
+/**********
+  MAIN-S 
+**********/
+
+/* INB-S */
+.lnb { width: 1260px; height: 80px;}
+.lnb-list li { float: left;
+  width: 208px; height: 80px;
+  position: relative; top: -60px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+.lnb-list li a { display: block;
+  width: 208px;  height: 80px;  
+  font-size: 18px; line-height: 80px; color: #6c7edb; text-align: center;
+  background-color: #fff;
+   
+}
+.lnb-list li.on a { 
+  color: #fff;
+  background-color: #6c7edb;
+}
+.lnb-list li:hover a:after { opacity: 1;}
+/* LNB-E */
+
+/* MONTH-S */
+
+.month-box {
+  height: 955px;
+  position: relative;
+}
+
+.month-box .month-box-left { 
+  width: 603px; height: 458px; padding-bottom: 116px;
+}
+.month-box .month-box-mainimage { padding-bottom: 11px;}
+.month-box .month-box-hash { 
+  font-size: 18px; line-height: 27px; text-align: right;
+}
+.month-box-txt {
+  width: 591px; height: 420px;
+  position: absolute; left: 669px; top: 0;
+}
+.month-box-txt strong {
+  font-weight: 600; font-size: 20px; line-height: 33px; color: #333;
+}
+.month-box-txt strong:after { content: "";
+  width: 562px; height: 1px;
+  background-color: #555;
+  position: absolute; left: 0; top: 40px;
+}
+.month-box-txt p { 
+  padding-top: 26px;
+  font-weight: 300; font-size: 16px; line-height: 26px; color: #555;
+}
+.month-box-txt p:last-child { padding: 30px 0 62px;}
+.month-box-list { position: absolute; left: 669px; top: 307px;}
+.month-box-list li { 
+  padding: 0 0 11px 27px;
+  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
+  position: relative;
+}
+.month-box-list li:after{ content: ""; 
+  width: 18px; height: 18px; 
+  background-image: url(/img/icon/sub-icon.png);
+  position: absolute; left: 0; top: 0;
+}
+.month-box-list li:nth-child(2):after { background-position: -18px 0;}
+.month-box-list li:nth-child(3):after { background-position: -36px 0;}
+.month-box-list li:nth-child(4):after { background-position: -54px 0;}
+.month-box-list li span { display: inline-block;
+  width: 88px;
+}
+
+.month-box-img p { float: left;
+  position: relative; 
+}
+.month-box-img p:after { content: "";
+  width: 288px; height: 228px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute; left: -6px; top: -6px;  z-index: -100;
+}
+.month-box-img p + p { margin-left: 48px;}
+.month-box-img p img { width: 276px; height: 216px; }
+
+/* MONTH-E */
+
+/* NEARBY-S */
+.nearby { height: 1531px;
+}
+
+.nearby-box > ul {
+  width: 100%; min-width: 1260px; height: 370px; margin-bottom: 170px;
+  position: relative;
+}
+.nearby-box1:before { content: "";
+  width: 303px; height: 303px; 
+  background-image: url(/img/sub/교촌마을.png);
+  position: absolute; left: 143px; top: 23px;
+}
+.nearby-box1:after { content: "";
+  width: 347px; height: 348px;
+  background-image: url(/img/sub/border.png);
+  position: absolute; left: 111px; top: 0;
+}
+.nearby-box .nearby-box1-txt{ 
+  width: 720px; height: 143px; padding: 0 0 88px 540px;
+}
+.nearby-box .nearby-box1-txt strong { display: block;
+  padding-bottom: 15px;
+  font-weight: 600; font-size: 30px; line-height: 46px; color: #555;
+}
+.nearby-box .nearby-box1-txt p {
+  font-weight: 300; font-size: 18px; line-height: 26px; color: #777;
+}
+.nearby-box .nearby-box1-list { display: block;
+  width: 720px;
+  margin-left: 540px;
+}
+.nearby-box1-list li {
+  padding: 0 0 11px 27px;
+  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
+  position: relative;
+}
+.nearby-box1-list li span { display: inline-block;
+  width: 88px; 
+}
+.nearby-box1-list li:after{ content: ""; 
+  width: 18px; height: 18px; 
+  background-image: url(/img/icon/sub-icon.png);
+  position: absolute; left: 0; top: 0;
+}
+.nearby-box1-list li:nth-child(2):after { background-position: -18px 0;}
+.nearby-box1-list li:nth-child(3):after { background-position: -36px 0;}
+.nearby-box1-list li:nth-child(4):after { background-position: -54px 0;}
+.nearby-box2 { height: 349px;}
+.nearby-box2:before { content: "";
+  width: 303px; height: 303px; 
+  background-image: url(/img/sub/교촌마을.png);
+  position: absolute; right: 144px; top: 23px; 
+}
+.nearby-box2:after { content: "";
+  width: 347px; height: 348px;
+  background-image: url(/img/sub/border.png);
+  position: absolute; right: 111px; top: 0;
+}
+.nearby-box .nearby-box2-txt{ 
+  width: 720px; height: 143px; padding: 0 0 88px 0;
+}
+.nearby-box .nearby-box2-txt strong { display: block;
+  padding-bottom: 15px;
+  font-weight: 600; font-size: 30px; line-height: 46px; color: #555;
+}
+.nearby-box .nearby-box2-txt p {
+  font-weight: 300; font-size: 18px; line-height: 26px; color: #777;
+}
+.nearby-box .nearby-box2-list { display: block;
+  width: 757px;
+}
+.nearby-box2-list li {
+  padding: 0 0 11px 27px;
+  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
+  position: relative;
+}
+.nearby-box2-list li span { display: inline-block;
+  width: 88px;
+}
+.nearby-box2-list li:after{ content: ""; 
+  width: 18px; height: 18px; 
+  background-image: url(/img/icon/sub-icon.png);
+  position: absolute; left: 0; top: 0;
+}
+.nearby-box2-list li:nth-child(2):after { background-position: 0 0;}
+.nearby-box2-list li:nth-child(3):after { background-position: -36px 0;}
+.nearby-box2-list li:nth-child(4):after { background-position: -54px 0;}
+
+.nearby-box3:before { content: "";
+  width: 303px; height: 303px; 
+  background-image: url(/img/sub/교촌마을.png);
+  position: absolute; left: 143px; top: 23px;
+}
+.nearby-box3:after { content: "";
+  width: 347px; height: 348px;
+  background-image: url(/img/sub/border.png);
+  position: absolute; left: 111px; top: 0;
+}
+.nearby-box .nearby-box3-txt{ 
+  width: 720px; padding: 0 0 88px 540px;
+}
+.nearby-box .nearby-box3-txt strong { display: block;
+  padding-bottom: 15px;
+  font-weight: 600; font-size: 30px; line-height: 46px; color: #555;
+}
+.nearby-box .nearby-box3-txt p {
+  font-weight: 300; font-size: 18px; line-height: 26px; color: #777;
+}
+.nearby-box .nearby-box3-list { display: block;
+  width: 720px;
+  margin-left: 540px;
+}
+.nearby-box3-list li {
+  padding: 0 0 11px 27px;
+  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
+  position: relative;
+}
+.nearby-box3-list li span { display: inline-block;
+  width: 88px; 
+}
+.nearby-box3-list li:after{ content: ""; 
+  width: 18px; height: 18px; 
+  background-image: url(/img/icon/sub-icon.png);
+  position: absolute; left: 0; top: 0;
+}
+.nearby-box3-list li:nth-child(2):after { background-position: -18px 0;}
+.nearby-box3-list li:nth-child(3):after { background-position: -36px 0;}
+.nearby-box3-list li:nth-child(4):after { background-position: -54px 0;}
+
+/* NEARBY-E */
+
+/**********
+MAIN-E 
+**********/
+
+
+

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+
+/***** MAIN-S *****/
+#main { overflow: hidden;
+  min-width: 1260px;
+  letter-spacing: -1.6px; font-family: 'Noto Sans KR', sans-serif;
+}
+.section { padding-bottom: 86px; 
+  position: relative;
+}
+.section-header { 
+  padding: 0 0 35px 3px;
+  font-weight: 700; letter-spacing: -1.6px; font-size: 34px; line-height: 46px; color: #333; text-align: left;
+}
+.section-header:after { content: "";
+  width: 320px; height: 16px;
+  background-color: #73cafa;
+  position: absolute; left: 11px; top: 26px; z-index: -10;
+}
+
+/* VISUAL-S */
+.visual { 
+  width: 100%; min-width: 1260px; height: 430px;
+  background-image: url(/img/sub/visual2.jpg);
+}
+.visual h2 {
+  width: 100%; min-width: 1260px; height: 430px;
+  font-weight: 700; font-size: 50px; line-height: 430px; color: #fff; text-align: center;
+}
+/* VISUAL-E */
+
+/* LNB-S */
+.lnb-list li a:after { content: ""; 
+  width: 138px; height: 1px; 
+  background-color: #fff;
+  position: absolute; left: 244px; bottom: 26px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.lnb-list li:hover a { 
+  color: #fff;
+  background-color: #6c7edb;
+}
+/* LNB-E */
+
+/* SUB-TITLE-S */
+.sub-tit { padding: 120px 0 86px; 
+  text-align: center; letter-spacing: -1.6px;
+}
+.sub-tit h3 {
+  padding-bottom: 2px;
+  font-weight: 700; font-size: 40px; line-height: 60px; color: #333;
+}
+.sub-tit .disc{
+  font-size: 24px; line-height: 32px; color: #777;
+}
+/* SUB-TITLE-E */
+
+/***** MAIN-E *****/
+

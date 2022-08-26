@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.inner { width: 1260px; margin: 0 auto;}
+
+/**********
+  MAIN-S 
+**********/
+
+/* VISUAL-S */
+.visual { 
+  width: 100%; min-width: 1260px; height: 430px;
+  background-image: url(/img/sub/visual2.jpg);
+}
+/* VISUAL-E */
+
+/* INB-S */
+.lnb { width: 1050px; height: 80px; }
+.lnb-list li { float: left;
+  width: 208px; height: 80px;
+  position: relative; top: -60px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+.lnb-list li a { display: block;
+  width: 208px;  height: 80px;  
+  font-size: 18px; line-height: 80px; color: #6c7edb; text-align: center;
+  background-color: #fff;
+   
+}
+.lnb-list li.on a { 
+  color: #fff;
+  background-color: #6c7edb;
+}
+.lnb-list li:hover a:after { opacity: 1;}
+/* LNB-E */
+
+/* INFORMATION-S */
+.infor-list { width: 100%; min-width: 1260px; height: 138px; margin-bottom: 45px;}
+.infor-list ul { width: 100%; min-width: 1260px; height: 138px;}
+.infor-list ul li { float: left;
+  width: 416px; height: 65px; 
+  font-weight: 600; font-size: 20px; line-height: 65px; color: #555;  text-align: center; 
+  border: 1px solid #f1f1f1;
+  position: relative;
+}
+.infor-list ul li:after { content: "";
+  width: 16px; height: 3px;
+  background-color: #777;
+  border-radius: 5px;
+  position: absolute; right: 15px; top: 50%;
+}
+.infor-box { display: inline-block;
+  width: 100%; min-width: 1256px;
+  /* border: 2px solid #555;
+  border-radius: 10px; */
+}
+
+.infor dl { 
+  width: 100%; min-width: 1256px; padding: 30px 0 60px ; height: 200px; margin-bottom: 25px;
+  border: 2px solid #555;
+  border-radius: 10px;
+  position: relative;
+}
+/* .infor dl:after { content: "";
+  width: 100%; height: 100%;
+  border: 2px solid #73cafa;
+  border-radius: 10px;
+  position: absolute; right: -10px; bottom: -15px; z-index: -100;
+} */
+.infor dl:before { content: "";
+  width: 322px; height: 236px;
+  position: absolute; right: 120px; top: 25px; z-index: 100;
+}
+.infor dl:nth-child(1):before { background-image: url(/img/sub/경주역.jpg);}
+.infor dl:nth-child(2):before { background-image: url(/img/sub/터미널.jpg);}
+.infor dl:nth-child(3):before { background-image: url(/img/sub/불국사.jpg);}
+.infor dl:nth-child(4):before { background-image: url(/img/sub/서라벌.jpg);}
+.infor dl:nth-child(5):before { background-image: url(/img/sub/신경주역.jpg);}
+.infor dl:after { content: "";
+  width: 322px; height: 236px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute; right: 112px; top: 34px;  z-index: -100;
+}
+.infor dl dt { 
+  padding: 0 120px 10px;
+  font-weight: 500; font-size: 28px; line-height: 30px; color: #555;
+}
+.infor dl dt:before { content: "";
+  width: 198px; height: 20px;
+  background-color: #73cafa;
+  position: absolute; left: 128px; top: 45px; z-index: -10;
+}
+.infor dl:nth-child(4) dt:before { width: 274px;}
+.infor dl:nth-child(5) dt:before { width: 220px;}
+.infor-box-info { 
+  padding: 0 120px 15px;
+  font-size: 16px; line-height: 24px; color: #777; text-indent: 3px;
+}
+.infor-box-addr { 
+  padding: 0 120px 0;
+  font-size: 14px; line-height: 22px; color: #777;
+}
+.infor-box-addr ul {}
+.infor-box-addr ul li { 
+  width: 560px; margin-bottom: 5px;
+ 
+}
+.infor-box-addr ul li span { display: block;
+  font-weight: 400; font-size: 18px; color: #555;
+}
+
+/* INFORMATION-E */
+
+
+/**********
+MAIN-E 
+**********/
+
+
+

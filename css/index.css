@@ -1,0 +1,436 @@
+@charset "UTF-8";
+@import url(/css/common.css);
+.inner { width: 1260px; margin: 0 auto;}
+
+
+/**********
+  MAIN-S 
+**********/
+
+/* MAIN-COMMON-S */
+#main { overflow: hidden;
+  min-width: 1260px;
+  letter-spacing: -1px; font-family: 'Noto Sans KR', sans-serif;
+}
+.section { padding: 100px 0;}
+.section-header {
+  margin-bottom: 86px;
+  text-align: center;
+}
+.tit {font-weight: 800; font-size: 46px; line-height: 82px; color: #333; }
+.tit strong { color: #73cafa;}
+.tit span { font-weight: 400; color: #7c7b7a;}
+.disc { 
+  /* margin-left: 360px; */
+  font-weight: 300; font-size: 20px; line-height: 27px; color: #999;
+}
+/* MAIN-COMMON-E */
+
+/* VISUAL-S */
+.visual {
+  width: 100%; min-width: 1260px; height: 802px;
+  background-position: center top;
+}
+.swiper-slide { 
+  font-family: 'Noto Serif KR', serif; font-weight: 300; letter-spacing: -1.6px; text-align: left; color: #fff; letter-spacing: -1.6px;
+}
+
+.swiper-slide .swiper-box .swiper-box-txt strong { font-size: 60px; }
+.swiper-slide .swiper-box-txt strong span { color: #f5e6b4;}
+.swiper-slide .swiper-box-txt p { font-size: 24px;}
+.slide1 { background-image: url(/img/visual/bigvisual1.jpg);}
+.slide1 .swiper-box { 
+  line-height: 76px;
+  position: absolute; top: 400px; right: 360px;
+}
+.slide1 .swiper-box p {
+  line-height: 30px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  position: absolute; left: 3px; top: -30px;
+}
+.slide2 { background-image: url(/img/visual/bigvisual2.jpg);}
+.slide2 .swiper-box { 
+  line-height: 67px;
+  position: absolute; top: 401px; left: 583px;
+}
+.slide2 .swiper-box p {
+  line-height: 40px; 
+  position: absolute; left: 0; top: -40px;
+}
+.slide3 { background-image: url(/img/visual/bigvisual3.jpg);}
+.slide3 .swiper-box { 
+  line-height: 50px; text-align: right;
+  position: absolute; top: 331px; left: 675px;
+}
+.slide3 .swiper-box p {
+  line-height: 40px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
+  position: absolute; left: 0; top: 125px;
+}
+.slide4 { background-image: url(/img/visual/bigvisual4.jpg);}
+.slide4 .swiper-box { 
+  line-height: 50px; text-align: right;
+  position: absolute; top: 350px; left: 661px;
+}
+.slide4 .swiper-box p {
+  line-height: 40px; text-indent: 258px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
+  position: absolute; left: 0; top: 125px;
+}
+#main .swiper .inner {
+  position: relative; top: -430px; 
+}
+.swiper-button-next { --swiper-theme-color : #fff;}
+.swiper-button-prev { --swiper-theme-color : #fff;}
+#main .swiper-pagination { --swiper-theme-color : #fff;
+  bottom: 218px; left: 400px;
+}
+.swiper-pagination:before { content: "지금여기는,"; 
+  width: 77px; height: 1px;  margin-right: 120px;
+  font-family: 'Noto Serif KR', serif; color: #fff;
+}
+.swiper-pagination:after { content: ""; 
+  width: 97px; height: 1px;
+  background-color: #fff;
+  position: absolute; left: 905px; top: 19px;
+}
+span.swiper-pagination-bullet { opacity: 1;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+span.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+/* VISUAL-E */
+
+/* TRAVEL-S */
+.travel .section-header .disc { padding-left: 335px;}
+.travel-box { width: 1260px; height: 465px; margin: 0 auto;}
+.travel-box li { float: left;
+  width: 276px; height: 355px;
+  position: relative;
+}
+.travel-box li + li { margin-left: 52px;}
+.travel-box .travel-category { padding-top: 45px; margin-bottom: 24px;
+  font-weight: 500; font-size: 16px; line-height: 16px; color: #333; 
+}
+.travel-category:before {content: "";
+  width: 269px; height: 1px;
+  background-color: #a3a3a3;
+  position: absolute; left: 0; top: 65px;
+}
+.travel-category:after {content: ""; 
+  width: 123px; height: 10px;
+  background-color: rgba(144, 170, 245, 0.65);
+  position: absolute; left: 17px;  top: 53px; z-index: -10;
+}
+.travel-box .travel-category-img:after { content: ""; display: none;
+  width: 61px; height: 61px;
+  background-color: #547cf0;
+  position: absolute; left: 215px; top: 46px; z-index: -10;
+  transition: all 0.3s;
+}
+.travel-box .travel-category-img p { overflow: hidden;
+  width: 269px; height: 53px; margin-bottom: 62px;
+  text-indent: -9999px;
+  background-image: url(/img/article1/img-1.jpg);
+}
+.travel-box li:nth-child(2) .travel-category-img p { background-image: url(/img/article1/img-2.jpg);}
+.travel-box li:nth-child(3) .travel-category-img p { background-image: url(/img/article1/img-3.jpg);}
+.travel-box li:nth-child(4) .travel-category-img p { background-image: url(/img/article1/img-4.jpg);}
+.travel-box .travel-category-img p:before { content: "";
+  width: 269px; height: 183px;
+  background-color: #000;
+  opacity: 0;
+  position: absolute; left: 0; top: 53px;
+  transition: all 0.5s;
+}
+.travel-box .travel-category-img .travel-more { display: none;
+  width: 110px; height: 24px; margin : 0 auto;
+  font-size: 14px; text-align: center; line-height: 24px; color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+  position: absolute; left: 0; top: 130px; right: 0;
+}
+.travel-box .travel-category-txt {
+  letter-spacing: -1.6px;
+  position: absolute; left: 0; top: 185px;
+}
+.travel-box .travel-category-txt strong { 
+  margin-bottom: 6px;
+  font-weight: 500; font-size: 22px; line-height: 32px; color: #555;
+}
+.travel-box .travel-category-txt p {
+  font-weight: 400; font-size: 16px; line-height: 20px; color: #777;
+}
+.travel-box li:hover .travel-category:before { display: none;}
+.travel-box li:hover .travel-category:after {
+  position: absolute; left: 17px; top: 38px; z-index: -10;
+}
+.travel-box li:hover .travel-category { padding-top: 30px; margin-bottom: 6px;}
+.travel-box li:hover .travel-category-img:after { display: block;}
+.travel-box li:hover .travel-category-img p:before { opacity: 0.68;}
+.travel-box li:hover .travel-category-img .travel-more { display: block;}
+.travel-box li:hover .travel-category-txt strong { 
+  width: 269px;
+  font-size: 24px; 
+  position: absolute; left: 0; top: 51px;
+}
+.travel-box li:hover .travel-category-txt { margin-top: 22px;}
+.travel-box li:hover .travel-category-txt strong span { color: #547cf0;}
+.travel-box li:hover .travel-category-txt p { 
+  width: 269px;
+  position: absolute; left: 0; top: 85px;
+}
+.travel-box li:hover .travel-category-img p { height: 183px;}
+.travel-category-img .travel-more:hover { 
+  color: #547cf0; background-color: #fff;
+}
+/* TRAVEL-E */
+
+/* NOTICE-S */
+.notice { 
+  width: 100%; min-width: 1260px; height: 330px; padding: 0;
+  background-image: url(/img/article2/unescoBg2.jpg);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
+}
+.notice:before{ content:""; 
+  width: 100%; min-width: 1260px; height: 330px; 
+  opacity: 0.6;
+  position: fixed; left: 0; top: 0; bottom: 0; right: 0;
+  background-color: #000;
+}
+.notice .section-header { display: inline-block;
+  height: 193px; margin: 96px 65px 37px 0;
+  text-align: left;
+  position: relative;
+}
+.notice .section-header .tit {
+  width: 308px; height: 54px;
+  line-height: 54px; color: #fff;
+}
+.notice .section-header .tit span { color: #fff;}
+.notice .section-header .disc { 
+  height: 20px;
+  line-height: 20px; color: #fff;
+  position: absolute; left: 1px; top: -18px;
+}
+.notice .section-header .notice-more { display: block;
+  width: 130px; height: 30px; 
+  font-weight: 200; font-size: 16px; line-height: 30px; color: #fff; text-align: center;
+  background-color: #90aaf5;
+  position: absolute; left: 0; top: 163px;
+  transition: all 0.3s;
+}
+.notice-box { width: 100%; min-width: 1260px; margin: 0 auto;
+  position: relative;
+}
+.notice-box-list { 
+  width: 887px; margin: 50px 0;
+  position: absolute; left: 372px; bottom: 0; 
+}
+.notice-box-list li { float: left; 
+  width: 206px; height: 194px; 
+  position: relative;
+  cursor: pointer;
+}
+.notice-box-list li + li { margin-left: 21px;}
+.notice-box-list li + li:after { content: "";
+  width: 1px; height: 194px; 
+  background-color: #f1f1f1;
+  position: absolute; left: -10px; top: 0;
+}
+.notice-box-list .notice-box-tit { display: block;
+  width: 206px; height: 41px; padding: 45px 0 6px;
+  font-weight: 500; font-size: 22px; line-height: 41px; color: #fff; text-align: center;
+}
+.notice-box-list .notice-box-txt { display: block;
+  width: 206px; height: 21px;
+  font-weight: 300; font-size: 16px; line-height: 21px; color: #f1f1f1; text-align: center;
+}
+.notice-box-list li .notice-box-more { display: block;   opacity: 0;
+  width: 100%; height: 194px; margin: auto;
+  text-indent: -9999px; text-align: center;
+  background-color: #fff;
+  transition: all 0.3s;
+  position: absolute; left: 0; top: 0; bottom: 0; right: 0; z-index: -10;
+}
+.notice .section-header .notice-more:hover { 
+  font-weight: 300; color: #90aaf5; 
+  background-color: #fff;
+}
+.notice-box-list li:hover .notice-box-more { opacity: 0.8;}
+
+/* NOTICE-E */
+
+/* FESTIVAL-S */
+.festival { 
+  height: 707px; 
+  position: relative;
+}
+.festival .section-header { margin-bottom: 36px;}
+.festival .section-header .disc { padding-left: 210px}
+.festival-box { position: relative;}
+.festival-box-list .festival-tab {
+  width: 604px; height: 50px; margin: 0 auto;
+  text-align: center;
+}
+.festival-box-list .festival-tab:before { content: ""; 
+  width: 604px; height: 50px; margin: 0 328px;
+  background-color: #f2f2f2;
+  position: absolute; left: 0; top: 0; z-index: -10;
+}
+.festival-box-list .festival-tab li { float: left;
+  width: 158px; height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.festival-box-list .festival-tab li:first-child { margin-left: 60px;}
+.festival-box-list .festival-tab-cont ul { margin-top: 93px;}
+.festival-box-list .festival-tab-cont ul li { float: left;
+  width: 232px; height: 373px;
+  font-weight: 400; font-size: 16px; line-height: 24px; text-align: center;
+  position: relative;
+}
+.festival-tab-cont .festival-tab-cont-list { display: none;}
+.festival-box-list .festival-tab-cont ul li + li { margin-left: 25px;}
+.festival-box-list .festival-tab-cont ul li strong {
+  color: #555;
+  position: absolute; left: 0; bottom: 24px; right: 0;
+}
+.festival-box-list .festival-tab-cont ul li p {
+  color: #777; 
+  position: absolute; left: 0; bottom: 0; right: 0;
+}
+.festival-box-list .festival-tab-cont ul li a:hover img {
+  margin-top: -50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.festival-box-list .festival-tab li.active {
+  width: 158px; height: 50px;
+  color: #fff; 
+  background-color: #6c7edb;
+}
+
+.festival-tab-cont .festival-tab-cont-list.active { display: block;}
+
+/* FESTIVAL-E */
+
+/* WORLD HERITAGE-S */
+.heritage { 
+  width: 100%; min-width: 1260px; height: 545px; 
+  background-image: url(/img/article4/article4-background.png);
+}
+.heritage .section-header .disc { padding-left: 160px}
+.heritage-box { width: 1104px; height: 349px; padding: 0 97px;}
+.heritage-box li { float: left;
+  width: 246px; height: 350px;
+  background-color: #fff;
+  border-radius: 12px; 
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.02);
+  position: relative;
+}
+.heritage-box li + li { margin-left: 40px;}
+.heritage-box li a { display: block; 
+  width: 246px; height: 270px; 
+  position: relative; 
+}
+.heritage-box li:before { content: ""; display: block;
+  width: 246px; height: 248px;
+  background-image: url(../img/article4/article4-hoverbg.png);
+  opacity: 0; 
+  position: absolute; left: 0; top: 0px; z-index: 100;
+  transition: all 0.3s;
+}
+.heritage-box li:after { content: ""; display: block;
+  height: 167px; margin: 40px auto;
+  background-image: url(/img/article4/icon.png);
+}
+.heritage-box li:nth-child(1):after {
+  width: 131px;
+  background-position: 0 0;
+}
+.heritage-box li:nth-child(2):after { 
+  width: 168px;
+  background-position: -131px 0;
+}
+.heritage-box li:nth-child(3):after { 
+  width: 167px;
+  background-position: -299px 0;
+}
+.heritage-box li:nth-child(4):after { 
+  width: 189px;
+  background-position: -466px 0;
+}
+.heritage-box-txt { display: block;
+  width: 154px; height: 63px; margin: 9px 51px 29px;
+  text-align: center;
+  position: absolute; left: 0; bottom: 0px;
+}
+.heritage-box-txt strong { display: block;
+  padding-top: 18px;
+  font-weight: 800; font-size: 24px; line-height: 29px; color: #547cf0;
+}
+.heritage-box-txt em { 
+  font-weight: 500; font-size: 16px; line-height: 18px;  color: #777;
+  position: absolute; left: 0; top: 0; right: 0;
+}
+.heritage-box-txt p {
+  font-weight: 200; font-size: 14px; line-height: 16px; color: #999;
+}
+.heritage-box span { display: none;
+  font-size: 28px; line-height: 248px;
+  position: absolute; left: 110px; top: 0px; z-index: 100;
+}
+.heritage-box .heritage-box-more { 
+  width: 246px; height: 248px;
+  text-indent: -9999px;
+  position: absolute; left: 0; top: 0; z-index: 100;
+}
+.heritage-box li:hover:before { opacity: 1;}
+.heritage-box li:hover span { display: block;}
+/* WORLD HERITAGE-E */
+
+/* SEASONS SECTION-S */
+.seasons-box { 
+  width: 1104px; height: 589px; margin: 0 auto;
+  border: 2px solid #547cf0;
+}
+.seasons-box-list { position: relative; top: 47px;}
+.seasons-box-list .seasons-tab {
+  background-color: #fff;
+  border: 2px solid #547cf0;
+  font-weight: 500; font-size: 25px; line-height: 67px; color: #6c7edb; text-align: center;
+  position: absolute; left: 10px; top: -95px; z-index: 100;
+}
+.seasons-box-list .seasons-tab li { float: left;
+  width: 179px; height: 71px;
+  cursor: pointer;
+}
+.seasons-box-list .seasons-tab li + li { border-left: 2px solid #547cf0;}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list { display: none;}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-txt { 
+  margin-bottom: 24px;
+  text-align: center;
+}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-txt strong { font-size: 25px; line-height: 33px; color: #555;}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-txt p {
+  margin-top: 18px;
+  font-size: 16px; line-height: 25px; color: #777;
+}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-img { padding: 0 13px;}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-img p { display: inline-block;
+  width: 527px; height: 379px;
+}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-img p + p { margin-left: 21px;}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list .seasons-tab-img p img { float: left;}
+.seasons-more { position: absolute; right: 35px; top: -18px;}
+.seasons-more span { float: right; }
+.seasons-box-list .seasons-tab li.active {  
+  color: #fff;
+  background-color: #6c7edb;
+}
+.seasons-box-list .seasons-tab-cont .seasons-tab-cont-list.active { display: block;}
+/* SEASONS SECTION-E */
+/**********
+MAIN-E 
+**********/
+

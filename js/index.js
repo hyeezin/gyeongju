@@ -1,4 +1,12 @@
 $(function(){
+
+  //제이쿼리를 이용한 마우스호버 효과 구현
+  $('.depth1').hover(function(){
+    $(this).next('.depth2').stop().slideToggle(300);
+    $('.gnb-bg').stop().slideToggle(150);
+  })
+
+
   $('.festival-tab .tab-link').click(function(){
     $('.festival-tab .tab-link').removeClass('active');
     $('.festival-box-list .festival-tab-cont .festival-tab-cont-list').removeClass('active');
@@ -14,16 +22,4 @@ $(function(){
     $('#' + $(this).data('tab')).addClass('active');
   })
 
-  $(function(){
-    let num = 1;
-    $('.material-symbols-outlined').on('click' , function(){
-      if( num == 1) {
-        $('.allmenu-wrap').show()
-        num = 2;
-      } else if( num == 2) {
-        $('.allmenu-wrap').hide()
-        num = 1;
-      }
-    })
-  })
 });

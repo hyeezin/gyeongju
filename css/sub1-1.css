@@ -99,12 +99,12 @@
 }
 .nearby-box1:before { content: "";
   width: 303px; height: 303px; 
-  background-image: url(/img/sub/교촌마을.png);
+  background-image: url(../img/sub/교촌마을.png);
   position: absolute; left: 143px; top: 23px;
 }
 .nearby-box1:after { content: "";
   width: 347px; height: 348px;
-  background-image: url(/img/sub/border.png);
+  background-image: url(../img/sub/border.png);
   position: absolute; left: 111px; top: 0;
 }
 .nearby-box .nearby-box1-txt{ 
@@ -131,7 +131,7 @@
 }
 .nearby-box1-list li:after{ content: ""; 
   width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
+  background-image: url(../img/icon/sub-icon.png);
   position: absolute; left: 0; top: 0;
 }
 .nearby-box1-list li:nth-child(2):after { background-position: -18px 0;}
@@ -140,12 +140,12 @@
 .nearby-box2 { height: 349px;}
 .nearby-box2:before { content: "";
   width: 303px; height: 303px; 
-  background-image: url(/img/sub/교촌마을.png);
+  background-image: url(../img/sub/교촌마을.png);
   position: absolute; right: 144px; top: 23px; 
 }
 .nearby-box2:after { content: "";
   width: 347px; height: 348px;
-  background-image: url(/img/sub/border.png);
+  background-image: url(../img/sub/border.png);
   position: absolute; right: 111px; top: 0;
 }
 .nearby-box .nearby-box2-txt{ 
@@ -171,7 +171,7 @@
 }
 .nearby-box2-list li:after{ content: ""; 
   width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
+  background-image: url(../img/icon/sub-icon.png);
   position: absolute; left: 0; top: 0;
 }
 .nearby-box2-list li:nth-child(2):after { background-position: 0 0;}
@@ -180,12 +180,12 @@
 
 .nearby-box3:before { content: "";
   width: 303px; height: 303px; 
-  background-image: url(/img/sub/교촌마을.png);
+  background-image: url(../img/sub/교촌마을.png);
   position: absolute; left: 143px; top: 23px;
 }
 .nearby-box3:after { content: "";
   width: 347px; height: 348px;
-  background-image: url(/img/sub/border.png);
+  background-image: url(../img/sub/border.png);
   position: absolute; left: 111px; top: 0;
 }
 .nearby-box .nearby-box3-txt{ 
@@ -212,7 +212,7 @@
 }
 .nearby-box3-list li:after{ content: ""; 
   width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
+  background-image: url(../img/icon/sub-icon.png);
   position: absolute; left: 0; top: 0;
 }
 .nearby-box3-list li:nth-child(2):after { background-position: -18px 0;}

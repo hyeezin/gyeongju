@@ -5,16 +5,41 @@
 /**********
   MAIN-S 
 **********/
+/* SUB-1-COMMAND-S */
+#main { overflow: hidden;
+  min-width: 1260px;
+  letter-spacing: -1.6px; font-family: 'Noto Sans KR', sans-serif;
+}
+.section { padding-bottom: 86px; 
+  position: relative;
+}
+.section-header { 
+  padding: 0 0 35px 3px;
+  font-weight: 700; letter-spacing: -1.6px; font-size: 34px; line-height: 46px; color: #333; text-align: left;
+}
+.section-header:after { content: "";
+  width: 320px; height: 16px;
+  background-color: #73cafa;
+  position: absolute; left: 11px; top: 26px; z-index: -10;
+}
+/* SUB-1-COMMAND-S */
+
+/* VISUAL-S */
+.visual { 
+  width: 100%; min-width: 1260px; height: 430px;
+  background-image: url(/img/sub/visual2.jpg);
+}
+/* VISUAL-E */
 
 /* INB-S */
-.lnb { width: 1260px; height: 80px;}
+.lnb { width: 1260px; height: 80px; }
 .lnb-list li { float: left;
-  width: 208px; height: 80px;
+  width: 630px; height: 80px;
   position: relative; top: -60px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 .lnb-list li a { display: block;
-  width: 208px;  height: 80px;  
+  width: 630px;  height: 80px;  
   font-size: 18px; line-height: 80px; color: #6c7edb; text-align: center;
   background-color: #fff;
    
@@ -26,204 +51,101 @@
 .lnb-list li:hover a:after { opacity: 1;}
 /* LNB-E */
 
-/* MONTH-S */
-
-.month-box {
-  height: 955px;
+/* TABLE-S */
+legend { overflow: hidden;
+  width: 0; height: 0; margin: 0; padding: 0;
   position: relative;
 }
+.festival-sch { 
+  padding: 20px 25px; margin: 0 0 30px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  text-align: left; vertical-align: middle;
+}
+.sch-left-count { 
+  margin-top: 5px;
+  font-size: 16px; line-height: 34px; color: #777;
+}
+.sch-left-count-all strong { font-weight: 600; font-size: 18px; color: #0e3964;}
+.sch-left-count-all span { margin-right: 5px;}
+.sch-left-count-page strong { font-weight: 600; font-size: 18px; color: #0e3964;}
 
-.month-box .month-box-left { 
-  width: 603px; height: 458px; padding-bottom: 116px;
+.festival-table {
+  margin-bottom: 15px;
+  text-align: center;
+  border-collapse: collapse;
 }
-.month-box .month-box-mainimage { padding-bottom: 11px;}
-.month-box .month-box-hash { 
-  font-size: 18px; line-height: 27px; text-align: right;
+.festival-table-list { display: table;
+  width: 100%; min-width: 1260px;
+  border-top: 2px solid #0e3964;
 }
-.month-box-txt {
-  width: 591px; height: 420px;
-  position: absolute; left: 669px; top: 0;
-}
-.month-box-txt strong {
-  font-weight: 600; font-size: 20px; line-height: 33px; color: #333;
-}
-.month-box-txt strong:after { content: "";
-  width: 562px; height: 1px;
-  background-color: #555;
-  position: absolute; left: 0; top: 40px;
-}
-.month-box-txt p { 
-  padding-top: 26px;
-  font-weight: 300; font-size: 16px; line-height: 26px; color: #555;
-}
-.month-box-txt p:last-child { padding: 30px 0 62px;}
-.month-box-list { position: absolute; left: 669px; top: 307px;}
-.month-box-list li { 
-  padding: 0 0 11px 27px;
-  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
-  position: relative;
-}
-.month-box-list li:after{ content: ""; 
-  width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
-  position: absolute; left: 0; top: 0;
-}
-.month-box-list li:nth-child(2):after { background-position: -18px 0;}
-.month-box-list li:nth-child(3):after { background-position: -36px 0;}
-.month-box-list li:nth-child(4):after { background-position: -54px 0;}
-.month-box-list li span { display: inline-block;
-  width: 88px;
-}
-
-.month-box-img p { float: left;
+.festival-table-list caption { overflow: hidden;
+  width: 0; height: 0; margin: 0; padding: 0;
+  line-height: 0;
   position: relative; 
 }
-.month-box-img p:after { content: "";
-  width: 288px; height: 228px;
+.thead {
+  border-top: 2px solid #0e3964;
+  background-color: #f1f1f1;
+}
+/* .festival-table .thead tr:first-child th {
+  border-top: 2px solid #0e3964;
+  background-color: #f1f1f1;
+
+} */
+.thead th { 
+  padding: 10px 10px;
+  font-weight: 500; font-size: 16px; color: #333;
+  position: relative;
+}
+/* .thead th:before { content: "";
+  width: 1px; height: 14px; 
+  background-color: #999;
+  position: absolute; right: 0; top: 50%;
+} */
+.tbody td {
+  padding: 10px 10px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 15px; color: #555; text-align: center; line-height: 30px;
+}
+.tbody .subject { text-align: left;}
+.tbody .atchFileld { text-indent: -9999px;
+  position: relative;
+}
+.tbody .atchFileld a:after { content: "";
+  width: 24px; height: 24px; margin: auto;
+  background-image: url(/img/icon/image_FILL0_wght400_GRAD0_opsz24.png);
+  position: absolute; right: 0; top: 0; left: 0; bottom: 0;
+}
+.tbody tr:nth-child(2n) {background-color: #f1f1f1;}
+/* TABLE-E */
+/* PAGINATION-S */
+.pagination { display: inline-block;
+  width: 100%; min-width: 1260px; height: 30px; margin: 20px 550px 300px; 
+  text-align: center;
+}
+.pagination .page-item > a { color: #555; }
+.pagination .page-item { display: inline;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.pagination .page-item > .page-link {float: left; 
+  min-width: 30px; height: 30px; padding: 0 11px;
+  text-align: center; line-height: 30px; 
   background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  position: absolute; left: -6px; top: -6px;  z-index: -100;
+  border-radius: 100px;
 }
-.month-box-img p + p { margin-left: 48px;}
-.month-box-img p img { width: 276px; height: 216px; }
+.pagination .page-item.active > .page-link { float: left; 
+  min-width: 30px; height: 30px; padding: 0 11px;
+  text-align: center; line-height: 30px; color: #fff;
+  background-color: #0e3964;
+  border-radius: 100px;
+}
+/* PAGINATION-E */
 
-/* MONTH-E */
 
-/* NEARBY-S */
-.nearby { height: 1531px;
-}
-
-.nearby-box > ul {
-  width: 100%; min-width: 1260px; height: 370px; margin-bottom: 170px;
-  position: relative;
-}
-.nearby-box1:before { content: "";
-  width: 303px; height: 303px; 
-  background-image: url(/img/sub/교촌마을.png);
-  position: absolute; left: 143px; top: 23px;
-}
-.nearby-box1:after { content: "";
-  width: 347px; height: 348px;
-  background-image: url(/img/sub/border.png);
-  position: absolute; left: 111px; top: 0;
-}
-.nearby-box .nearby-box1-txt{ 
-  width: 720px; height: 143px; padding: 0 0 88px 540px;
-}
-.nearby-box .nearby-box1-txt strong { display: block;
-  padding-bottom: 15px;
-  font-weight: 600; font-size: 30px; line-height: 46px; color: #555;
-}
-.nearby-box .nearby-box1-txt p {
-  font-weight: 300; font-size: 18px; line-height: 26px; color: #777;
-}
-.nearby-box .nearby-box1-list { display: block;
-  width: 720px;
-  margin-left: 540px;
-}
-.nearby-box1-list li {
-  padding: 0 0 11px 27px;
-  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
-  position: relative;
-}
-.nearby-box1-list li span { display: inline-block;
-  width: 88px; 
-}
-.nearby-box1-list li:after{ content: ""; 
-  width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
-  position: absolute; left: 0; top: 0;
-}
-.nearby-box1-list li:nth-child(2):after { background-position: -18px 0;}
-.nearby-box1-list li:nth-child(3):after { background-position: -36px 0;}
-.nearby-box1-list li:nth-child(4):after { background-position: -54px 0;}
-.nearby-box2 { height: 349px;}
-.nearby-box2:before { content: "";
-  width: 303px; height: 303px; 
-  background-image: url(/img/sub/교촌마을.png);
-  position: absolute; right: 144px; top: 23px; 
-}
-.nearby-box2:after { content: "";
-  width: 347px; height: 348px;
-  background-image: url(/img/sub/border.png);
-  position: absolute; right: 111px; top: 0;
-}
-.nearby-box .nearby-box2-txt{ 
-  width: 720px; height: 143px; padding: 0 0 88px 0;
-}
-.nearby-box .nearby-box2-txt strong { display: block;
-  padding-bottom: 15px;
-  font-weight: 600; font-size: 30px; line-height: 46px; color: #555;
-}
-.nearby-box .nearby-box2-txt p {
-  font-weight: 300; font-size: 18px; line-height: 26px; color: #777;
-}
-.nearby-box .nearby-box2-list { display: block;
-  width: 757px;
-}
-.nearby-box2-list li {
-  padding: 0 0 11px 27px;
-  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
-  position: relative;
-}
-.nearby-box2-list li span { display: inline-block;
-  width: 88px;
-}
-.nearby-box2-list li:after{ content: ""; 
-  width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
-  position: absolute; left: 0; top: 0;
-}
-.nearby-box2-list li:nth-child(2):after { background-position: 0 0;}
-.nearby-box2-list li:nth-child(3):after { background-position: -36px 0;}
-.nearby-box2-list li:nth-child(4):after { background-position: -54px 0;}
-
-.nearby-box3:before { content: "";
-  width: 303px; height: 303px; 
-  background-image: url(/img/sub/교촌마을.png);
-  position: absolute; left: 143px; top: 23px;
-}
-.nearby-box3:after { content: "";
-  width: 347px; height: 348px;
-  background-image: url(/img/sub/border.png);
-  position: absolute; left: 111px; top: 0;
-}
-.nearby-box .nearby-box3-txt{ 
-  width: 720px; padding: 0 0 88px 540px;
-}
-.nearby-box .nearby-box3-txt strong { display: block;
-  padding-bottom: 15px;
-  font-weight: 600; font-size: 30px; line-height: 46px; color: #555;
-}
-.nearby-box .nearby-box3-txt p {
-  font-weight: 300; font-size: 18px; line-height: 26px; color: #777;
-}
-.nearby-box .nearby-box3-list { display: block;
-  width: 720px;
-  margin-left: 540px;
-}
-.nearby-box3-list li {
-  padding: 0 0 11px 27px;
-  font-weight: 400; font-size: 16px; line-height: 20px; color: #555;
-  position: relative;
-}
-.nearby-box3-list li span { display: inline-block;
-  width: 88px; 
-}
-.nearby-box3-list li:after{ content: ""; 
-  width: 18px; height: 18px; 
-  background-image: url(/img/icon/sub-icon.png);
-  position: absolute; left: 0; top: 0;
-}
-.nearby-box3-list li:nth-child(2):after { background-position: -18px 0;}
-.nearby-box3-list li:nth-child(3):after { background-position: -36px 0;}
-.nearby-box3-list li:nth-child(4):after { background-position: -54px 0;}
-
-/* NEARBY-E */
 
 /**********
 MAIN-E 
 **********/
-
-
-

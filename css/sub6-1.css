@@ -1,18 +1,5 @@
 @charset "UTF-8";
 
-.inner { width: 1260px; margin: 0 auto;}
-
-/**********
-  MAIN-S 
-**********/
-
-/* VISUAL-S */
-.visual { 
-  width: 100%; min-width: 1260px; height: 430px;
-  background-image: url(/img/sub/visual2.jpg);
-}
-/* VISUAL-E */
-
 /* INB-S */
 .lnb { width: 1050px; height: 80px; }
 .lnb-list li { float: left;
@@ -100,7 +87,6 @@
   padding: 0 120px 0;
   font-size: 14px; line-height: 22px; color: #777;
 }
-.infor-box-addr ul {}
 .infor-box-addr ul li { 
   width: 560px; margin-bottom: 5px;
  
@@ -110,11 +96,6 @@
 }
 
 /* INFORMATION-E */
-
-
-/**********
-MAIN-E 
-**********/
 
 
 

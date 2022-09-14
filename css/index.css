@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url(/css/common.css);
-.inner { width: 1260px; margin: 0 auto;}
+
 
 
 /**********
@@ -38,7 +37,7 @@
 .swiper-slide .swiper-box .swiper-box-txt strong { font-size: 60px; }
 .swiper-slide .swiper-box-txt strong span { color: #f5e6b4;}
 .swiper-slide .swiper-box-txt p { font-size: 24px;}
-.slide1 { background-image: url(/img/visual/bigvisual1.jpg);}
+.slide1 { background-image: url(../img/visual/bigvisual1.jpg);}
 .slide1 .swiper-box { 
   line-height: 76px;
   position: absolute; top: 400px; right: 360px;
@@ -47,7 +46,7 @@
   line-height: 30px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute; left: 3px; top: -30px;
 }
-.slide2 { background-image: url(/img/visual/bigvisual2.jpg);}
+.slide2 { background-image: url(../img/visual/bigvisual2.jpg);}
 .slide2 .swiper-box { 
   line-height: 67px;
   position: absolute; top: 401px; left: 583px;
@@ -56,7 +55,7 @@
   line-height: 40px; 
   position: absolute; left: 0; top: -40px;
 }
-.slide3 { background-image: url(/img/visual/bigvisual3.jpg);}
+.slide3 { background-image: url(../img/visual/bigvisual3.jpg);}
 .slide3 .swiper-box { 
   line-height: 50px; text-align: right;
   position: absolute; top: 331px; left: 675px;
@@ -65,7 +64,7 @@
   line-height: 40px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
   position: absolute; left: 0; top: 125px;
 }
-.slide4 { background-image: url(/img/visual/bigvisual4.jpg);}
+.slide4 { background-image: url(../img/visual/bigvisual4.jpg);}
 .slide4 .swiper-box { 
   line-height: 50px; text-align: right;
   position: absolute; top: 350px; left: 661px;
@@ -86,10 +85,10 @@
   width: 77px; height: 1px;  margin-right: 120px;
   font-family: 'Noto Serif KR', serif; color: #fff;
 }
-.swiper-pagination:after { content: ""; 
-  width: 97px; height: 1px;
+.swiper-pagination:after { content: ""; display: inline-block;
+  width: 97px; height: 1px; 
   background-color: #fff;
-  position: absolute; left: 905px; top: 19px;
+  position: relative; right: 185px;
 }
 span.swiper-pagination-bullet { opacity: 1;
   border: 2px solid #fff;
@@ -130,11 +129,11 @@ span.swiper-pagination-bullet-active {
 .travel-box .travel-category-img p { overflow: hidden;
   width: 269px; height: 53px; margin-bottom: 62px;
   text-indent: -9999px;
-  background-image: url(/img/article1/img-1.jpg);
+  background-image: url(../img/article1/img-1.jpg);
 }
-.travel-box li:nth-child(2) .travel-category-img p { background-image: url(/img/article1/img-2.jpg);}
-.travel-box li:nth-child(3) .travel-category-img p { background-image: url(/img/article1/img-3.jpg);}
-.travel-box li:nth-child(4) .travel-category-img p { background-image: url(/img/article1/img-4.jpg);}
+.travel-box li:nth-child(2) .travel-category-img p { background-image: url(../img/article1/img-2.jpg);}
+.travel-box li:nth-child(3) .travel-category-img p { background-image: url(../img/article1/img-3.jpg);}
+.travel-box li:nth-child(4) .travel-category-img p { background-image: url(../img/article1/img-4.jpg);}
 .travel-box .travel-category-img p:before { content: "";
   width: 269px; height: 183px;
   background-color: #000;
@@ -188,7 +187,7 @@ span.swiper-pagination-bullet-active {
 /* NOTICE-S */
 .notice { 
   width: 100%; min-width: 1260px; height: 330px; padding: 0;
-  background-image: url(/img/article2/unescoBg2.jpg);
+  background-image: url(../img/article2/unescoBg2.jpg);
   background-repeat: no-repeat;
   backdrop-filter: blur(5px);
 }
@@ -262,10 +261,7 @@ span.swiper-pagination-bullet-active {
 /* NOTICE-E */
 
 /* FESTIVAL-S */
-.festival { 
-  height: 707px; 
-  position: relative;
-}
+.festival { position: relative;}
 .festival .section-header { margin-bottom: 36px;}
 .festival .section-header .disc { padding-left: 210px}
 .festival-box { position: relative;}
@@ -284,7 +280,7 @@ span.swiper-pagination-bullet-active {
   cursor: pointer;
 }
 .festival-box-list .festival-tab li:first-child { margin-left: 60px;}
-.festival-box-list .festival-tab-cont ul { margin-top: 93px;}
+.festival-box-list .festival-tab-cont ul { margin-top: 93px; height: 469px;}
 .festival-box-list .festival-tab-cont ul li { float: left;
   width: 232px; height: 373px;
   font-weight: 400; font-size: 16px; line-height: 24px; text-align: center;
@@ -300,6 +296,7 @@ span.swiper-pagination-bullet-active {
   color: #777; 
   position: absolute; left: 0; bottom: 0; right: 0;
 }
+.festival-box-list .festival-tab-cont ul li a img { transition: all .3s;}
 .festival-box-list .festival-tab-cont ul li a:hover img {
   margin-top: -50px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -316,8 +313,8 @@ span.swiper-pagination-bullet-active {
 
 /* WORLD HERITAGE-S */
 .heritage { 
-  width: 100%; min-width: 1260px; height: 545px; 
-  background-image: url(/img/article4/article4-background.png);
+  width: 100%; min-width: 1260px; 
+  background-image: url(../img/article4/article4-background.png);
 }
 .heritage .section-header .disc { padding-left: 160px}
 .heritage-box { width: 1104px; height: 349px; padding: 0 97px;}
@@ -342,7 +339,7 @@ span.swiper-pagination-bullet-active {
 }
 .heritage-box li:after { content: ""; display: block;
   height: 167px; margin: 40px auto;
-  background-image: url(/img/article4/icon.png);
+  background-image: url(../img/article4/icon.png);
 }
 .heritage-box li:nth-child(1):after {
   width: 131px;
